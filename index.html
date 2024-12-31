@@ -74,48 +74,90 @@
         <h1>NEWS</h1>
         
         <div id="splide" class="splide">
-            <div class="splide__track">
+          <div class="splide__track">
             <ul class="splide__list">
-                <li class="splide__slide">
+              <li class="splide__slide">
                 <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Card 1">
-                    <h3>Card Title 1</h3>
-                    <p>Description for card 1</p>
+                  <img src="https://via.placeholder.com/300x200" alt="Slide 1">
+                  <div class="card-footer">Lorem Ipsum 01</div>
                 </div>
-                </li>
-                <li class="splide__slide">
+              </li>
+              <li class="splide__slide">
                 <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Card 2">
-                    <h3>Card Title 2</h3>
-                    <p>Description for card 2</p>
+                  <img src="https://via.placeholder.com/300x200" alt="Slide 2">
+                  <div class="card-footer">Lorem Ipsum 02</div>
                 </div>
-                </li>
-                <li class="splide__slide">
+              </li>
+              <li class="splide__slide">
                 <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Card 3">
-                    <h3>Card Title 3</h3>
-                    <p>Description for card 3</p>
+                  <img src="https://via.placeholder.com/300x200" alt="Slide 3">
+                  <div class="card-footer">Lorem Ipsum 03</div>
                 </div>
-                </li>
+              </li>
             </ul>
-            </div>
+          </div>
         </div>
 
         <div class="mainstory">
             <img src="images/Formula e-3.jpg" alt="main story">
             <div>
-                <p></p>
-                <button></button>
+                <h1>Jaguar's Mitch Evans races from last to the win in staggering São Paulo E-Prix Round 1</h1>
+                <p>The GEN3 Evo era and the 2024/25 ABB FIA Formula E World Championship fired into life in incredible fashion in Brazil with one of Formula E's all-time best races, as Jaguar TCS Racing's Mitch Evans drives from the pack of the pack to the front come the chequered flag.</p>
+                <button>view more <img class="arrowUpRight" src="images\arrow-up-right-svgrepo-com.svg"></button>
             </div>
         </div>
     </section>
 
     <section id="whatis">
         <h1>WHAT IS FORMULA E?</h1>
+        <div>
+          <img src="" alt="">
+          <div>
+            <h2>Formula E races are a high-speed game of chess with...</h2>
+            <p>The most competitive line-up in motorsport
+              Non-stop, edge-of-the-seat action. Innovation and record-breaking acceleration
+              Pinnacle of performance. Electrifying entertainment in the biggest cities
+              11 global locations. The race towards a cleaner future, faster
+              Net Zero since day zero. Formula E, officially the ABB FIA Formula E World Championship, is an open-wheel single-seater motorsport championship for electric cars. The racing series is the highest class of competition for electrically powered single-seater racing cars. The inaugural championship race was held in Beijing in September 2014. Since 2020, the series has had FIA world championship status.</p>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <h2>Racing for a cleaner future, faster</h2>
+            <p>Formula E is more than a just a racing series - it's a battle for the future. Our radical cars - all powered by electricity - pave the way for the road cars of tomorrow, with the series acting as a competitive platform to test and develop the latest in electric technology.
+              Featuring a collective of world- class automotive manufacturers, renowned brands and highly skilled drivers, Season 9 expanded on previous achievements to run 16 races across urban circuits in 10 different cities around the world. Through innovative local initiatives, we continued to pursue better ways to address some of today's most critical societal challenges, reinforcing our commitment to expedite sustainable human development in the pursuit of a brighter future. With climate and nature stewardship being at the heart of our DNA, we worked to ensure Season 9 continued to push the boundaries of what is possible and laid the foundation for further progress in Season 10.
+            </p>
+          </div>
+
+        </div>
     </section>
 
     <section id="racepreview">
         <h1>Race review</h1>
+        <div>
+          <div class="filter-buttons text-center mb-4">
+            <button class="btn btn-outline-primary active" data-filter="mexico">Mexico City</button>
+            <button class="btn btn-outline-primary" data-filter="jeddah">Jeddah</button>
+            <button class="btn btn-primary" data-filter="monaco">Monaco</button>
+          </div>
+        
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Position</th>
+                  <th>Driver</th>
+                  <th>Team</th>
+                  <th>Time</th>
+                </tr>
+              </thead>
+              <tbody id="table-body">
+                <!-- Data will be populated here -->
+              </tbody>
+            </table>
+          </div>
+        </div>
     </section>
 
     <section id="calendar">

@@ -78,29 +78,40 @@ span.navbar-toggler-text-menu {
 
 /* NOTICIAS */
 
-.card {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-}
-
-.card img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
 .splide__slide {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  /* Card Styling */
+.card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.splide__track {
-    margin: 20px 0;
+.card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-bottom: 4px solid #0056ff;
+}
+
+.card .card-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #0056ff;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 14px;
 }
 
 .mainstory {
