@@ -26,6 +26,34 @@ body {
     padding: 2em;
 }
 
+#buttonWithArrow {
+    background-color: var(--main);
+    color: white;
+    border: none;
+    padding: 0.5em 0.8em;
+    border-radius: 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--main);
+    transition: 0.2s;
+}
+
+#buttonWithArrow img {
+    width: 2em;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(317deg) brightness(104%) contrast(101%);
+}
+
+#buttonWithArrow:hover {
+    background-color: var(--secondary);
+    color: var(--main);
+    transition: 0.2s;
+
+    & > img {
+        filter: brightness(0) saturate(100%) invert(8%) sepia(100%) saturate(7196%) hue-rotate(247deg) brightness(98%) contrast(144%);
+    }
+}
+
 /* NAV */
 
 nav {
@@ -105,6 +133,9 @@ span.navbar-toggler-text-menu {
 }
 
 /* NOTICIAS */
+#news {
+    z-index: 2;
+}
 
 .splide__slide {
     display: flex;
@@ -140,6 +171,13 @@ span.navbar-toggler-text-menu {
     padding: 1em;
     font-size: 1em;
     text-align: left;
+    transition: 0.2s;
+}
+
+.card .card-footer:hover {
+    background: var(--secondary);
+    color: var(--main);
+    transition: 0.2s;
 }
 
 .mainstory {
@@ -170,21 +208,6 @@ span.navbar-toggler-text-menu {
     font-size: 2em
 }
 
-#buttonWithArrow {
-    background-color: var(--main);
-    color: white;
-    border: none;
-    padding: 0.5em 0.8em;
-    border-radius: 30px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-}
-
-#buttonWithArrow img {
-    width: 2em;
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(317deg) brightness(104%) contrast(101%);
-}
 /* WHATIS */
 
 section#whatis {
@@ -197,6 +220,20 @@ section#whatis {
 
 section#whatis #mainTittles {
     color: var(--secondary);
+}
+
+.historyOne {
+    display: flex;
+    align-items: center;
+}
+
+.historyOne > div {
+    width: 50%;
+}
+
+.historyOne img {
+    width: 100%;
+    border-radius: 0 30px 30px 0;
 }
 
 /* RACE PREVIEW */
@@ -215,24 +252,38 @@ section#whatis #mainTittles {
     background-color: var(--main) !important;
 }
 
+.table-responsive {
+    padding: 0em 2em;
+}
+
 table {
-    border: 2px solid var(--main);
+    border: 2px solid var(--main) !important;
     border-radius: 8px;
     overflow: hidden;
     text-align: center;
 }
 
 th {
-    background-color: var(--main);
-    color: white;
+    background-color: var(--main) !important;
+    color: white !important;
     font-weight: bold;
 }
 
 td {
-    border: 1px solid var(--main);
+    border: 1px solid var(--main) !important;
 }
 
 /* CALENDAR */
+
+#calendar {
+    background-color: var(--main);
+    border-radius: 30px 30px 0 0 ;
+    padding-bottom: 4em;
+}
+
+#calendar #mainTittles {
+    color: var(--secondary);
+}
 
 .calendar-container {
     display: flex;

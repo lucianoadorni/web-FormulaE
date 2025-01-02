@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-
     <nav class="navbar bg-body-tertiary fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="images/Formula_E_Wordmark_full_colour.png" alt="formula e logo"></a>
@@ -77,34 +76,34 @@
           <div class="splide__track">
             <ul class="splide__list">
               <li class="splide__slide">
-                <div class="card">
+                <a href="#" class="card" > 
                   <img src="images/Formula e-3.jpg" alt="Slide 1">
                   <div class="card-footer">Wheel-to-wheel in Mexico City</div>
-                </div>
+                </a>
               </li>
               <li class="splide__slide">
-                <div class="card">
+                <a href="#" class="card">
                   <img src="images/Formula e-3.jpg" alt="Slide 2">
                   <div class="card-footer">Mitch Evans' record back to front drive</div>
-                </div>
+                </a>
               </li>
               <li class="splide__slide">
-                <div class="card">
+                <a href="#" class="card">
                   <img src="images/Formula e-3.jpg" alt="Slide 3">
                   <div class="card-footer">Da Costa makes it three wins in a row</div>
-                </div>
+                </a>
               </li>
               <li class="splide__slide">
-                <div class="card">
+                <a href="#" class="card">
                   <img src="images/Formula e-3.jpg" alt="Slide 4">
                   <div class="card-footer">Mitch Evans recounts his brilliant last-to-first recovery</div>
-                </div>
+                </a>
               </li>
               <li class="splide__slide">
-                <div class="card">
+                <a href="#" class="card">
                   <img src="images/Formula e-3.jpg" alt="Slide 5">
                   <div class="card-footer">Da Costa makes it three wins in a row</div>
-                </div>
+                </a>
               </li>
             </ul>
           </div>
@@ -124,8 +123,10 @@
 
     <section id="whatis">
         <h1  id="mainTittles">WHAT IS FORMULA E?</h1>
-        <div>
-          <img src="" alt="">
+        <div class="historyOne">
+          <div>
+            <img src="images/Formula e-3.jpg" alt="">
+          </div>
           <div>
             <h2>Formula E races are a high-speed game of chess with...</h2>
             <p>The most competitive line-up in motorsport
@@ -143,9 +144,8 @@
               Featuring a collective of world- class automotive manufacturers, renowned brands and highly skilled drivers, Season 9 expanded on previous achievements to run 16 races across urban circuits in 10 different cities around the world. Through innovative local initiatives, we continued to pursue better ways to address some of today's most critical societal challenges, reinforcing our commitment to expedite sustainable human development in the pursuit of a brighter future. With climate and nature stewardship being at the heart of our DNA, we worked to ensure Season 9 continued to push the boundaries of what is possible and laid the foundation for further progress in Season 10.
             </p>
           </div>
-          <div>
-            <model-viewer alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" src="shared-assets/models/NeilArmstrong.glb" ar environment-image="shared-assets/environments/moon_1k.hdr" poster="shared-assets/models/NeilArmstrong.webp" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
-          </div>
+
+          <model-viewer alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" src="shared-assets/models/NeilArmstrong.glb" ar environment-image="shared-assets/environments/moon_1k.hdr" poster="shared-assets/models/NeilArmstrong.webp" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
         </div>
     </section>
 
@@ -235,22 +235,10 @@
 
     <!-- LOCOMOTIVE -->
     <script src="node_modules/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
-    <script>
-        (function () {
-            const locomotiveScroll = new LocomotiveScroll();
-        })();
-    </script>
-    <!-- THREE.JS -->
-    <script type="importmap">
-      {
-        "imports": {
-          "three": "https://cdn.jsdelivr.net/npm/three@<version>/build/three.module.js",
-          "three/addons/": "https://cdn.jsdelivr.net/npm/three@<version>/examples/jsm/"
-        }
-      }
-    </script>
+    <!-- THREE -->
+     <script src="node_modules\three\build\three.module.js"></script>
     <!-- MODELVIEWER -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js" integrity="sha512-plg/t84LGOWRvpkaRuaMl1QLQqe8KDPliEKAE9i7XIfqUC/ZQgx4dqLlMJyXnQmcjNav9H+z9ly9KCCuvRqsSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
     <!-- ANIME -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <!-- JQUERY -->
