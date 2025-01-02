@@ -52,6 +52,11 @@ nav {
     box-shadow: none !important;
 }
 
+.navbar-toggler:hover {
+    background-color: var(--main);
+    border: var(--secondary);
+}
+
 span.navbar-toggler-icon-custom {
     padding: 0 0 0 0.5em;
 }
@@ -128,6 +133,7 @@ span.navbar-toggler-text-menu {
 }
 
 .mainstory {
+    padding: 10em 0;
     display: flex;
 }
 
