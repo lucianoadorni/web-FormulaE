@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }).mount();
 });
 
+
 const data = {
   mexico: [
     { position: 1, driver: "Driver A", team: "Team X", time: "45:14:758" },
@@ -87,3 +88,53 @@ document.querySelectorAll(".filter-buttons button").forEach((button) => {
 
 // Initial population with "mexico" data
 populateTable("mexico");
+
+
+const events = {
+  12: {
+    title: "Miami Grand Prix",
+    description: "Experience the thrill of the Miami Grand Prix! Round 5 of the championship.",
+    image: "https://via.placeholder.com/300x200/FF0000/FFFFFF?text=Miami+GP",
+    link: "#"
+  },
+  15: {
+    title: "Driver Meet & Greet",
+    description: "Meet your favorite drivers and get autographs!",
+    image: "https://via.placeholder.com/300x200/00FF00/FFFFFF?text=Meet+Drivers",
+    link: "#"
+  },
+  22: {
+    title: "Pit Lane Walk",
+    description: "Explore the pit lane and get an inside look at the teams in action.",
+    image: "https://via.placeholder.com/300x200/0000FF/FFFFFF?text=Pit+Lane+Walk",
+    link: "#"
+  }
+};
+
+// Generate calendar days
+const calendarDays = document.querySelector(".calendar-days");
+for (let day = 1; day <= 30; day++) {
+  const dayElement = document.createElement("div");
+  dayElement.className = "calendar-day";
+  dayElement.textContent = day;
+
+  // Add click event to show event details
+  dayElement.addEventListener("click", () => {
+    const event = events[day];
+    if (event) {
+      document.getElementById("event-date").textContent = `April ${day}`;
+      document.getElementById("event-title").textContent = event.title;
+      document.getElementById("event-description").textContent = event.description;
+      document.getElementById("event-image").src = event.image;
+      document.getElementById("event-link").href = event.link;
+    } else {
+      document.getElementById("event-date").textContent = `April ${day}`;
+      document.getElementById("event-title").textContent = "No Events";
+      document.getElementById("event-description").textContent = "No events scheduled for this day.";
+      document.getElementById("event-image").src = "https://via.placeholder.com/300x200/CCCCCC/000000?text=No+Events";
+      document.getElementById("event-link").href = "#";
+    }
+  });
+
+  calendarDays.appendChild(dayElement);
+}

@@ -71,7 +71,7 @@
     </section>
 
     <section id="news">
-        <h1>NEWS</h1>
+        <h1 id="mainTittles">NEWS</h1>
         
         <div id="splide" class="splide">
           <div class="splide__track">
@@ -99,17 +99,19 @@
         </div>
 
         <div class="mainstory">
+          <div class="mainstoryimg">
             <img src="images/Formula e-3.jpg" alt="main story">
-            <div>
-                <h1>Jaguar's Mitch Evans races from last to the win in staggering São Paulo E-Prix Round 1</h1>
-                <p>The GEN3 Evo era and the 2024/25 ABB FIA Formula E World Championship fired into life in incredible fashion in Brazil with one of Formula E's all-time best races, as Jaguar TCS Racing's Mitch Evans drives from the pack of the pack to the front come the chequered flag.</p>
-                <button>view more <img class="arrowUpRight" src="images\arrow-up-right-svgrepo-com.svg"></button>
-            </div>
+          </div>
+          <div class="mainstorytext">
+              <h1>Jaguar's Mitch Evans races from last to the win in staggering São Paulo E-Prix Round 1</h1>
+              <p>The GEN3 Evo era and the 2024/25 ABB FIA Formula E World Championship fired into life in incredible fashion in Brazil with one of Formula E's all-time best races, as Jaguar TCS Racing's Mitch Evans drives from the pack of the pack to the front come the chequered flag.</p>
+              <button id="buttonWithArrow">View more <img class="arrowUpRight" src="images\arrow-up-right-svgrepo-com.svg"></button>
+          </div>
         </div>
     </section>
 
     <section id="whatis">
-        <h1>WHAT IS FORMULA E?</h1>
+        <h1  id="mainTittles">WHAT IS FORMULA E?</h1>
         <div>
           <img src="" alt="">
           <div>
@@ -134,12 +136,12 @@
     </section>
 
     <section id="racepreview">
-        <h1>Race review</h1>
+        <h1 id="mainTittles">Race review</h1>
         <div>
           <div class="filter-buttons text-center mb-4">
             <button class="btn btn-outline-primary active" data-filter="mexico">Mexico City</button>
             <button class="btn btn-outline-primary" data-filter="jeddah">Jeddah</button>
-            <button class="btn btn-primary" data-filter="monaco">Monaco</button>
+            <button class="btn btn-outline-primary" data-filter="monaco">Monaco</button>
           </div>
         
           <div class="table-responsive">
@@ -161,15 +163,59 @@
     </section>
 
     <section id="calendar">
-        <h1>Calendar</h1>
+        <div class="container my-5">
+          <h1 id="mainTittles">Calendar</h1>
+          <div class="calendar-container">
+            <!-- Calendar -->
+            <div class="calendar">
+              <div class="calendar-header">April 2023</div>
+              <div class="calendar-days">
+                <!-- Days will be generated here -->
+              </div>
+            </div>
+      
+            <!-- Event Details -->
+            <div class="event-details">
+              <div class="event-image">
+                <img src="https://via.placeholder.com/300x200" alt="Event Image" id="event-image">
+              </div>
+              <div>
+                <p class="event-date" id="event-date">Select a date</p>
+                <p class="event-title" id="event-title">Event Title</p>
+                <p class="event-description" id="event-description">Event details will appear here when you select a date from the calendar.</p>
+                <button id="buttonWithArrow">Tickets <img class="arrowUpRight" src="images\arrow-up-right-svgrepo-com.svg"></button>
+              </div>
+            </div>
+          </div>
+        </div>
     </section>
 
     <section id="sustain">
-        <h1>Sustainability at Formula E</h1>
+        <h1 id="mainTittles">Sustainability at Formula E</h1>
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" alt="Slide 1">
+          <div class="card-footer">Lorem Ipsum 01</div>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" alt="Slide 1">
+          <div class="card-footer">Lorem Ipsum 01</div>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" alt="Slide 1">
+          <div class="card-footer">Lorem Ipsum 01</div>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" alt="Slide 1">
+          <div class="card-footer">Lorem Ipsum 01</div>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" alt="Slide 1">
+          <div class="card-footer">Lorem Ipsum 01</div>
+        </div>
     </section>
 
     <section id="valuesand">
-        <h1>Our Values and Objectives</h1>
+        <h1 id="mainTittles">Our Values and Objectives</h1>
     </section>
 
 
