@@ -122,3 +122,28 @@ span.navbar-toggler-text-menu {
 .mainstory img {
     width: 50%;
 }
+
+/* WHATIS */
+
+/* RACE PREVIEW */
+.filter-buttons button {
+    border-radius: 30px;
+    margin: 5px;
+}
+
+table {
+    border: 2px solid #0056ff;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+th {
+    background-color: #0056ff;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    border: 1px solid #0056ff;
+}
