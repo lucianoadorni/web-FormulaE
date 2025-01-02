@@ -44,17 +44,13 @@ nav {
     align-items: flex-end;
     flex-direction: row;
     flex-wrap: nowrap;
+    transition: 0.4s;
 }
 
 .navbar-toggler:focus {
     text-decoration: none;
     outline: 0;
     box-shadow: none !important;
-}
-
-.navbar-toggler:hover {
-    background-color: var(--main);
-    border: var(--secondary);
 }
 
 span.navbar-toggler-icon-custom {
@@ -64,15 +60,28 @@ span.navbar-toggler-icon-custom {
 span.navbar-toggler-icon-custom img {
     filter: invert(8%) sepia(100%) saturate(7196%) hue-rotate(247deg) brightness(98%) contrast(144%);
     width: 1em;
-} 
+}
 
-.navbar-brand img{
+.navbar-brand img {
     width: 6em;
 }
 
 span.navbar-toggler-text-menu {
     font-family: "QbOne";
     color: var(--main);
+}
+
+.navbar-toggler:hover {
+    transition: 0.4s;
+    background-color: var(--main);
+
+    & span.navbar-toggler-text-menu {
+        color: var(--secondary);
+    }
+
+    & span.navbar-toggler-icon-custom img {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(317deg) brightness(104%) contrast(101%);
+    }
 }
 
 /* MAIN SCRREN */
@@ -127,9 +136,10 @@ span.navbar-toggler-text-menu {
     background: var(--main);
     color: white;
     text-align: center;
-    font-weight: bold;
+    font-weight: 300;
     padding: 1em;
     font-size: 1em;
+    text-align: left;
 }
 
 .mainstory {
@@ -146,9 +156,18 @@ span.navbar-toggler-text-menu {
     width: 50%;
 }
 
+.mainstory .mainstoryimg img {
+    border-radius: 30px;
+}
+
 .mainstory .mainstorytext {
     width: 50%;
-    padding: 1em;
+    padding: 1em 1em 1em 2em;
+}
+
+.mainstory .mainstorytext h1 {
+    font-weight: bold;
+    font-size: 2em
 }
 
 #buttonWithArrow {

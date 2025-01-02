@@ -23,7 +23,7 @@ anime.timeline({loop: true})
 document.addEventListener('DOMContentLoaded', function () {
   new Splide('#splide', {
     type: 'loop',
-    perPage: 3,
+    perPage: 5,
     perMove: 1,
     gap: '1rem',
     breakpoints: {
@@ -64,10 +64,10 @@ const data = {
 
 // Function to populate the table
 function populateTable(filter) {
-  const tableBody = document.getElementById("table-body");
-  tableBody.innerHTML = ""; // Clear current table data
+  const tableBody = $("#table-body");
+  tableBody.empty(); // Clear current table data
 
-  data[filter].forEach((item) => {
+  $.each(data[filter], function (index, item) {
     const row = `
       <tr>
         <td>${item.position}</td>
@@ -76,20 +76,21 @@ function populateTable(filter) {
         <td>${item.time}</td>
       </tr>
     `;
-    tableBody.insertAdjacentHTML("beforeend", row);
+    tableBody.append(row);
   });
 }
 
 // Event listener for filter buttons
-document.querySelectorAll(".filter-buttons button").forEach((button) => {
-  button.addEventListener("click", (e) => {
-    document.querySelectorAll(".filter-buttons button").forEach((btn) => btn.classList.remove("active", "btn-primary"));
-    e.target.classList.add("active", "btn-primary");
-    e.target.classList.remove("btn-outline-primary");
+$(".filter-buttons button").on("click", function () {
+  // Remove classes from all buttons
+  $(".filter-buttons button").removeClass("active btn-primary").addClass("btn-outline-primary");
 
-    const filter = e.target.getAttribute("data-filter");
-    populateTable(filter);
-  });
+  // Add classes to the clicked button
+  $(this).addClass("active btn-primary").removeClass("btn-outline-primary");
+
+  // Get the filter attribute and populate the table
+  const filter = $(this).data("filter");
+  populateTable(filter);
 });
 
 // Initial population with "mexico" data
@@ -118,29 +119,30 @@ const events = {
 };
 
 // Generate calendar days
-const calendarDays = document.querySelector(".calendar-days");
+const $calendarDays = $(".calendar-days");
+  
 for (let day = 1; day <= 30; day++) {
-  const dayElement = document.createElement("div");
-  dayElement.className = "calendar-day";
-  dayElement.textContent = day;
+  const $dayElement = $("<div>")
+    .addClass("calendar-day")
+    .text(day);
 
   // Add click event to show event details
-  dayElement.addEventListener("click", () => {
+  $dayElement.on("click", function () {
     const event = events[day];
     if (event) {
-      document.getElementById("event-date").textContent = `April ${day}`;
-      document.getElementById("event-title").textContent = event.title;
-      document.getElementById("event-description").textContent = event.description;
-      document.getElementById("event-image").src = event.image;
-      document.getElementById("event-link").href = event.link;
+      $("#event-date").text(`April ${day}`);
+      $("#event-title").text(event.title);
+      $("#event-description").text(event.description);
+      $("#event-image").attr("src", event.image);
+      $("#event-link").attr("href", event.link);
     } else {
-      document.getElementById("event-date").textContent = `April ${day}`;
-      document.getElementById("event-title").textContent = "No Events";
-      document.getElementById("event-description").textContent = "No events scheduled for this day.";
-      document.getElementById("event-image").src = "https://via.placeholder.com/300x200/CCCCCC/000000?text=No+Events";
-      document.getElementById("event-link").href = "#";
+      $("#event-date").text(`April ${day}`);
+      $("#event-title").text("No Events");
+      $("#event-description").text("No events scheduled for this day.");
+      $("#event-image").attr("src", "https://via.placeholder.com/300x200/CCCCCC/000000?text=No+Events");
+      $("#event-link").attr("href", "#");
     }
   });
 
-  calendarDays.appendChild(dayElement);
+  $calendarDays.append($dayElement);
 }
