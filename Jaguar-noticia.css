@@ -1,0 +1,244 @@
+body {
+    background-color: #0017FF;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.jaguar-noticia {
+    padding: 2rem;
+}
+
+.text-uppercase {
+    padding: 0.5em;
+    text-align: center;
+}
+  
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+  
+.news-section {
+    background-color: #0017FF;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+  
+.news-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-decoration: underline;
+}
+
+.news-image {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.news-image img {
+    width: 100%;
+    object-fit: cover;
+    height: 35rem;
+}
+  
+.news-body {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.news-text {
+    padding: 2rem;
+    padding-top: 0%;
+}  
+
+  
+.highlight {
+    font-weight: bold;
+}
+
+.marquee {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: white;
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 120s linear infinite;
+}
+
+.marquee img {
+    height: 40px;
+    margin: 0 15px;
+}
+
+.marquee div {
+    display: block;
+    position: absolute;
+    width: 300%;
+    overflow: hidden;
+    animation: marquee 100s linear infinite;
+}
+
+.marquee div:hover {
+    animation-play-state: paused;
+}
+
+.marquee span {
+    float: left;
+    width: 50%;
+}
+
+@keyframes marquee {
+0% { left: 0; }
+100% { left: -100%; }
+}
+
+.footer {
+    background-color: white;
+}
+
+.footer-links {
+    background: #001628;
+    padding: 15px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    background: #f8f9fa;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.footer-bottom a {
+    color: #333;
+    text-decoration: none;
+    margin-left: 1.5rem;
+}
+
+.container p a {
+    color: #0017FF;
+}
+
+hr {
+    border: 0; 
+    height: 0.2rem; 
+    background-color: #0017FF;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.carrusel {
+    padding: 2rem;
+    padding-top: 0%;
+}
+
+.carousel-text h2 {
+    font-weight: bold;
+}
+.carousel-text p {
+    font-size: 1rem;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 20rem;
+    border-radius: 1rem;
+}
+.carousel-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.carousel {
+    flex: 1;
+}
+.carousel-text {
+    flex: 1;
+    color: white;
+}
+
+.second-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.table-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.table-container h1 {
+    color: #0017FF;
+    font-weight: bold;
+}
+
+.table-container h2 {
+    color: #0017FF;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table th {
+    background-color: #0017FF !important;
+}
+
+.team-logo {
+    height: 40px;
+}
+
+.driver-photo {
+    height: 50px;
+    border-radius: 50%;
+}
+
+.full-results-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.full-results-btn a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #0017FF;
+    padding: 10px 20px;
+    border-radius: 2rem;
+}
+
+.full-results-btn a:hover {
+    background-color: transparent;
+    border: 1px #0017FF solid;
+    color: #0017FF;
+}
