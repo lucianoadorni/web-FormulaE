@@ -127,9 +127,19 @@ span.navbar-toggler-text-menu {
 }
 
 #MainScreen img {
-    height: 100vh;
+    height: 97vh;
     width: 100vw;
     object-fit: cover;
+}
+
+#COUNTDOWN {
+    font-family: "QbOne";
+    color: var(--secondary);
+    font-size: 1.5em;
+    background-color: var(--main);
+    text-align: center;
+    padding: 0.2em;
+    height: 3vh;
 }
 
 /* NOTICIAS */
@@ -225,6 +235,8 @@ section#whatis #mainTittles {
 .historyOne {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 1em 0;
 }
 
 .historyOne > div {
@@ -234,6 +246,15 @@ section#whatis #mainTittles {
 .historyOne img {
     width: 100%;
     border-radius: 0 30px 30px 0;
+}
+
+.historyText {
+    padding: 0 2em;
+}
+
+model-viewer {
+    height: 30vh;
+    width: 50%;
 }
 
 /* RACE PREVIEW */
