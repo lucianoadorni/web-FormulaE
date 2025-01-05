@@ -1,4 +1,21 @@
 $(document).ready(function () {
+  // CLOSE NAVBAR ON CLICK
+  const navLinks = document.querySelectorAll('.nav-item');
+  navLinks.forEach((elem) => {
+    elem.addEventListener('click', () => {
+      $("button.navbar-toggler").click();
+    });
+  });
+  
+  // LOCOMOTIVE
+  const scroll = new LocomotiveScroll({
+    el: document.querySelector("[data-scroll-container]"),
+    smooth: true,
+    tablet: { smooth: true },
+    smartphone: { smooth: true }
+  });
+
+  // SPLIDE
   new Splide('#splide', {
     type: 'loop',
     perPage: 5,

@@ -114,23 +114,34 @@ span.navbar-toggler-text-menu {
 }
 
 /* MAIN SCRREN */
-
 #MainText {
-    z-index: 3;
-    position: absolute;
-
-}
-
-#MainText h1 {
     font-family: "QbOne";
     color: var(--secondary);
     font-size: 8em;
+    z-index: 3;
+    position: absolute;
+    top: 31%;
+    left: 40%;
+}
+
+#MainScreen {
+    position:relative;
 }
 
 #MainScreen img {
     height: 97vh;
     width: 100vw;
     object-fit: cover;
+}
+
+#MainScreen .img1 {
+    position: absolute;
+    z-index: 3;
+}
+
+#MainScreen .img2 {
+    position: inherit;
+    z-index: 1;
 }
 
 #COUNTDOWN {
@@ -206,7 +217,7 @@ span.navbar-toggler-text-menu {
 }
 
 .mainstory .mainstoryimg img {
-    border-radius: 30px;
+    border-radius: 0 30px 30px 0 ;
 }
 
 .mainstory .mainstorytext {
@@ -389,6 +400,16 @@ td {
 
 .btn-tickets:hover {
     background: #003bb5;
+}
+
+/* SUSTAINABILITY */
+#horizontalScrollSec {
+    display: flex;
+    width: 200vh;
+}
+
+#horizontalScrollSec .Boostrapcard {
+    padding: 1em;
 }
 
 /* FOOTER */
