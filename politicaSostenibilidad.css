@@ -1,7 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+    font-family: 'QbOne';
+    src: url(Fonts/qb-one-semi-bold.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --main: #0000FF;
+    --secondary: #FFFFFF;
+    --bluesecondary: #00FFFF;
+}
+
 body {
-    background-color: #0017FF;
+    background-color: var(--main);
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .policy-section {
@@ -19,6 +34,10 @@ body {
 .content-container {
     display: flex;
     flex-wrap: wrap;
+}
+
+h1 {
+    font-family: "QbOne";
 }
 
 .text-uppercase {
@@ -119,3 +138,28 @@ hr {
     height: 0.2rem; 
     background-color: #003BE6;
 }
+
+@media screen and (max-width: 768px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    li {
+        font-size: 0.75em;
+    }
+
+    .text-container {
+        flex-direction: column;
+        padding: 0;
+        padding-top: 2em;
+    }
+
+    .content-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+}
+
