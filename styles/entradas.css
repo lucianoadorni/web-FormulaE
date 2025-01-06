@@ -35,7 +35,7 @@ body {
     text-align: inherit;
     letter-spacing: .1em;
     font-weight: 700;
-    color: var(--primary);
+    color: var(--headerColor);
     margin-bottom: 0.25rem;
     display: block;
     font-family: "QbOne";
@@ -49,7 +49,7 @@ body {
     text-align: inherit;
     max-width: 44rem;
     margin: 0 0 1rem 0;
-    color: var(--headerColor);
+    color: var(--primary);
     position: relative;
 }
 
@@ -299,6 +299,9 @@ body {
         flex-direction: column;
         align-items: center;
     }
+    #sbsr .topper {
+        color: var(--bodyTextColorWhite);
+    }
     #sbsr .title {
         margin-bottom: 1rem;
         color: var(--bodyTextColorWhite);
@@ -512,7 +515,9 @@ body {
         flex-direction: column;
         align-items: flex-start;
     }
-
+    #sbs .topper {
+        color: var(--bodyTextColorWhite);
+    }
     #sbs .title {
         color: var(--bodyTextColorWhite);
     }
