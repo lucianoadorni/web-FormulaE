@@ -14,7 +14,7 @@
 
 body {
     background-color: var(--main);
-    color: white;
+    color: var(--secondary);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -24,7 +24,7 @@ body {
 }
 
 .jaguar-noticia {
-    padding: 2rem;
+    padding: 2em;
 }
 
 h1 {
@@ -37,45 +37,45 @@ h1 {
 }
   
 .title {
-    font-size: 2rem;
+    font-size: 2em;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 2em;
 }
   
 .news-section {
-    background-color: #0017FF;
-    padding: 2rem;
-    border-radius: 1rem;
+    background-color: var(--main);
+    padding: 2em;
+    border-radius: 1em;
 }
   
 .news-header {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-weight: bold;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5em;
     text-decoration: underline;
 }
 
 .news-image {
     border-radius: 10px;
     overflow: hidden;
-    margin-bottom: 2rem;
+    margin-bottom: 2em;
 }
 
 .news-image img {
     width: 100%;
     object-fit: cover;
-    height: 35rem;
+    height: 35em;
 }
   
 .news-body {
-    font-size: 1rem;
+    font-size: 1em;
     line-height: 1.6;
 }
 
 .news-text {
-    padding: 2rem;
+    padding: 2em;
     padding-top: 0%;
 }  
 
@@ -88,8 +88,8 @@ h1 {
     position: relative;
     width: 100%;
     height: 100px;
-    background: white;
-    padding: 20px 0;
+    background: var(--secondary);
+    padding: 2em 0;
     overflow: hidden;
 }
 
@@ -99,7 +99,7 @@ h1 {
 }
 
 .marquee img {
-    height: 40px;
+    height: 4em;
     margin: 0 15px;
 }
 
@@ -126,41 +126,41 @@ h1 {
 }
 
 .footer {
-    background-color: white;
+    background-color: var(--secondary);
 }
 
 .footer-links {
     background: #001628;
-    padding: 15px 0;
+    padding: 1.5em 0;
 }
 
 .footer-links a {
-    color: white;
+    color: var(--secondary);
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 14px;
+    margin: 0 1.5em;
+    font-size: 1.4em;
 }
 
 .footer-bottom {
-    background: #f8f9fa;
-    padding: 1rem 0;
-    font-size: 1.2rem;
+    background: var(--secondary);
+    padding: 1em 0;
+    font-size: 1.2em;
 }
 
 .footer-bottom a {
     color: #333;
     text-decoration: none;
-    margin-left: 1.5rem;
+    margin-left: 1.5em;
 }
 
 .container p a {
-    color: #0017FF;
+    color: var(--main);
 }
 
 hr {
     border: 0; 
-    height: 0.2rem; 
-    background-color: #0017FF;
+    height: 0.2em; 
+    background-color: var(--main);
 }
 
 .image-grid img {
@@ -170,7 +170,7 @@ hr {
 }
 
 .carrusel {
-    padding: 2rem;
+    padding: 2em;
     padding-top: 0%;
 }
 
@@ -178,49 +178,49 @@ hr {
     font-weight: bold;
 }
 .carousel-text p {
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 .carousel-item img {
     object-fit: cover;
-    height: 20rem;
-    border-radius: 1rem;
+    height: 20em;
+    border-radius: 1em;
 }
 .carousel-container {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 2em;
 }
 .carousel {
     flex: 1;
 }
 .carousel-text {
     flex: 1;
-    color: white;
+    color: var(--secondary);
 }
 
 .second-title {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
 .table-container {
-    background-color: #ffffff;
-    padding: 2rem;
+    background-color: var(--secondary);
+    padding: 2em;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
+    margin-bottom: 2em;
 }
 
 .table-container h1 {
-    color: #0017FF;
+    color: var(--main);
     font-weight: bold;
 }
 
 .table-container h2 {
-    color: #0017FF;
+    color: var(--main);
     font-weight: bold;
-    margin-bottom: 2rem;
+    margin-bottom: 2em;
 }
 
 .table th, .table td {
@@ -229,43 +229,43 @@ hr {
 }
 
 .table th {
-    background-color: #0017FF !important;
-    color: white !important;
+    background-color: var(--main) !important;
+    color: var(--secondary) !important;
 }
 
 .team-logo {
-    height: 40px;
+    height: 3em;
 }
 
 .driver-photo {
-    height: 50px;
+    height: 4em;
     border-radius: 50%;
 }
 
 .full-results-btn {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 2em;
 }
 
 .full-results-btn a {
     text-decoration: none;
     font-weight: bold;
-    color: #ffffff;
-    background-color: #0017FF;
-    padding: 10px 20px;
-    border-radius: 2rem;
+    color: var(--secondary);
+    background-color: var(--main);
+    padding: 1em 2em;
+    border-radius: 2em;
 }
 
 .full-results-btn a:hover {
     background-color: transparent;
-    border: 1px #0017FF solid;
-    color: #0017FF;
+    border: 1px var(--main) solid;
+    color: var(--main);
 }
 
 @media screen and (max-width: 768px) {
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.5em;
     }
 
     li {
@@ -279,7 +279,7 @@ hr {
     }
 
     .news-image img {
-        height: 20rem;
+        height: 20em;
     }
 
     .carousel-container {
