@@ -3,42 +3,343 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Official Home of the Formula E</title>
 
     <!-- LOCOMOTIVE -->
-    <link rel="stylesheet" href="node_modules/locomotive-scroll/dist/locomotive-scroll.css">
-
-    
+    <link rel='stylesheet' href='node_modules\locomotive-scroll\dist\locomotive-scroll.min.css'/>
 
     <!-- BOOSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- SPLIDE -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/css/splide.min.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-
-
-    
-    <div data-scroll-container>
-        <div data-scroll-section>
-            <h1 data-scroll>Hey</h1>
-            <p data-scroll>👋</p>
+  <div data-scroll-container>
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="images/Formula_E_Wordmark_full_colour.png" alt="formula e logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-text-menu">Menu</span>
+          <span class="navbar-toggler-icon-custom"><img src="images/bars-solid.svg"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a data-scroll-to class="nav-link active" aria-current="page" href="#news">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-        <div data-scroll-section>
-            <h2 data-scroll data-scroll-speed="1">What's up?</h2>
-            <p data-scroll data-scroll-speed="2">😬</p>
+      </div>
+    </nav>
+
+    <section data-scroll-section id="MainScreen">
+      <h1 id="MainText">ARE YOU READY?</h1>
+      <img data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2" class="img1" src="images\formulaE_3.2_justcar.png" alt="" />
+      <img class="img2" src="images\formulaE_3_nocard.webp" alt="">
+      <div id="COUNTDOWN"></div>
+    </section>
+  
+    <section data-scroll-section id="news">
+        <h1 data-scroll data-scroll-delay="0.2" id="mainTittles">NEWS</h1>
+        
+        <div id="splide" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <a href="#" class="card" > 
+                  <img src="images/Formula e-3.jpg" alt="Slide 1">
+                  <div class="card-footer">Wheel-to-wheel in Mexico City</div>
+                </a>
+              </li>
+              <li class="splide__slide">
+                <a href="#" class="card">
+                  <img src="images/Formula e-3.jpg" alt="Slide 2">
+                  <div class="card-footer">Mitch Evans' record back to front drive</div>
+                </a>
+              </li>
+              <li class="splide__slide">
+                <a href="#" class="card">
+                  <img src="images/Formula e-3.jpg" alt="Slide 3">
+                  <div class="card-footer">Da Costa makes it three wins in a row</div>
+                </a>
+              </li>
+              <li class="splide__slide">
+                <a href="#" class="card">
+                  <img src="images/Formula e-3.jpg" alt="Slide 4">
+                  <div class="card-footer">Mitch Evans recounts his brilliant last-to-first recovery</div>
+                </a>
+              </li>
+              <li class="splide__slide">
+                <a href="#" class="card">
+                  <img src="images/Formula e-3.jpg" alt="Slide 5">
+                  <div class="card-footer">Da Costa makes it three wins in a row</div>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>
+
+        <div class="mainstory">
+          <div class="mainstoryimg">
+            <img src="images/Formula e-3.jpg" alt="main story">
+          </div>
+          <div class="mainstorytext">
+              <h1>Jaguar's Mitch Evans races from last to the win in staggering São Paulo E-Prix Round 1</h1>
+              <p>The GEN3 Evo era and the 2024/25 ABB FIA Formula E World Championship fired into life in incredible fashion in Brazil with one of Formula E's all-time best races, as Jaguar TCS Racing's Mitch Evans drives from the pack of the pack to the front come the chequered flag.</p>
+              <button id="buttonWithArrow">View more <img class="arrowUpRight" src="images\arrow-up-right-svgrepo-com.svg"></button>
+          </div>
+        </div>
+    </section>
+
+    <section data-scroll-section id="whatis">
+        <h1  id="mainTittles">WHAT IS FORMULA E?</h1>
+
+        <div class="historyOne">
+          <div>
+            <img src="images/Formula e-3.jpg" alt="">
+          </div>
+          <div>
+            <h2>Formula E races are a high-speed game of chess</h2>
+            <p>The most competitive line-up in motorsport
+              Non-stop, edge-of-the-seat action. Innovation and record-breaking acceleration
+              Pinnacle of performance. Electrifying entertainment in the biggest cities
+              11 global locations. The race towards a cleaner future, faster
+              Net Zero since day zero. Formula E, officially the ABB FIA Formula E World Championship, is an open-wheel single-seater motorsport championship for electric cars. The racing series is the highest class of competition for electrically powered single-seater racing cars. The inaugural championship race was held in Beijing in September 2014. Since 2020, the series has had FIA world championship status.</p>
+          </div>
+        </div>
+
+        <div class="historyOne">
+          <div>
+            <h2>Racing for a cleaner future, faster</h2>
+            <p>Formula E is more than a just a racing series - it's a battle for the future. Our radical cars - all powered by electricity - pave the way for the road cars of tomorrow, with the series acting as a competitive platform to test and develop the latest in electric technology.
+              Featuring a collective of world- class automotive manufacturers, renowned brands and highly skilled drivers, Season 9 expanded on previous achievements to run 16 races across urban circuits in 10 different cities around the world. Through innovative local initiatives, we continued to pursue better ways to address some of today's most critical societal challenges, reinforcing our commitment to expedite sustainable human development in the pursuit of a brighter future. With climate and nature stewardship being at the heart of our DNA, we worked to ensure Season 9 continued to push the boundaries of what is possible and laid the foundation for further progress in Season 10.
+            </p>
+          </div>
+          <model-viewer src="3d\formula_e__jaguar_i_type-4.glb" ar environment-image="legacy" camera-controls touch-action="pan-y" camera-orbit="calc(-1.5rad + env(window-scroll-y) * 4rad) calc(0deg + env(window-scroll-y) * 180deg) calc(5m - env(window-scroll-y) * 10m)" ></model-viewer>
+        </div>
+    </section>
+
+    <section data-scroll-section id="racepreview">
+        <h1 id="mainTittles">Race review</h1>
+        <div>
+          <div class="filter-buttons text-center mb-4">
+            <button class="btn btn-outline-primary active" data-filter="mexico">Mexico City</button>
+            <button class="btn btn-outline-primary" data-filter="jeddah">Jeddah</button>
+            <button class="btn btn-outline-primary" data-filter="monaco">Monaco</button>
+          </div>
+        
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Position</th>
+                  <th>Driver</th>
+                  <th>Team</th>
+                  <th>Time</th>
+                </tr>
+              </thead>
+              <tbody id="table-body">
+                <!-- Data will be populated here -->
+              </tbody>
+            </table>
+            <button id="buttonWithArrow">View more <img class="arrowUpRight" src="images\arrow-up-right-svgrepo-com.svg"></button>
+          </div>
+        </div>
+    </section>
+
+    <section data-scroll-section id="calendar">
+        <div class="container my-5">
+          <h1 id="mainTittles">Calendar</h1>
+          <div class="calendar-container">
+            <!-- Calendar -->
+            <div class="calendar">
+              <div class="calendar-header">April 2023</div>
+              <div class="calendar-days">
+                <!-- Days will be generated here -->
+              </div>
+            </div>
+      
+            <!-- Event Details -->
+            <div class="event-details">
+              <div class="event-image">
+                <img src="https://via.placeholder.com/300x200" alt="Event Image" id="event-image">
+              </div>
+              <div>
+                <p class="event-date" id="event-date">Select a date</p>
+                <p class="event-title" id="event-title">Event Title</p>
+                <p class="event-description" id="event-description">Event details will appear here when you select a date from the calendar.</p>
+                <button id="buttonWithArrow">Tickets <img class="arrowUpRight" src="images\arrow-up-right-svgrepo-com.svg"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section data-scroll-section id="sustain">
+      <h1 id="mainTittles">Sustainability at Formula E</h1>
+      <div id="horizontalScrollSec" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-8">
+        <div class="Boostrapcard" style="width: 18rem;">
+          <img src="images/Formula e-3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button id="buttonWithArrow">Tickets <img class="arrowUpRight" src="images\arrow-up-right-svgrepo-com.svg"></button>
+          </div>
+        </div>
+        <div class="Boostrapcard" style="width: 18rem;">
+          <img src="images/Formula e-3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button id="buttonWithArrow">Tickets <img class="arrowUpRight" src="images\arrow-up-right-svgrepo-com.svg"></button>
+          </div>
+        </div>
+        <div class="Boostrapcard" style="width: 18rem;">
+          <img src="images/Formula e-3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button id="buttonWithArrow">Tickets <img class="arrowUpRight" src="images\arrow-up-right-svgrepo-com.svg"></button>
+          </div>
+        </div>
+        <div class="Boostrapcard" style="width: 18rem;">
+          <img src="images/Formula e-3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button id="buttonWithArrow">Tickets <img class="arrowUpRight" src="images\arrow-up-right-svgrepo-com.svg"></button>
+          </div>
+        </div>
+        <div class="Boostrapcard" style="width: 20rem;">
+          <img src="images/Formula e-3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button id="buttonWithArrow">Tickets <img class="arrowUpRight" src="images\arrow-up-right-svgrepo-com.svg"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section data-scroll-section id="valuesand">
+        <h1 id="mainTittles">Our Values and Objectives</h1>
+    </section>
+
+    <footer data-scroll-section class="bg-white text-dark text-center py-4">
+        <!-- Sección Marquee -->
+        <div class="marquee py-3">
+            <div>
+                <img src="Media/imagenes/1200px-SABIC_Logo_RGB.webp" alt="">
+                <img src="Media/imagenes/ABB-logo.webp" alt="">
+                <img src="Media/imagenes/Aggreko-Logo-RGB-01.webp" alt="">
+                <img src="Media/imagenes/antofagasta-minerals-logo.webp" alt="">
+                <img src="Media/imagenes/DHL_Logo.svg.webp" alt="">
+                <img src="Media/imagenes/Hackett_Sport_Logo_Black.webp" alt="">
+                <img src="Media/imagenes/HK_2019_Logo-1-.webp" alt="">
+                <img src="Media/imagenes/Ifosys-Logo.webp" alt="">
+                <img src="Media/imagenes/Julius-baer-logo.webp" alt="">
+                <img src="Media/imagenes/pif_colour.webp" alt="">
+                <img src="Media/imagenes/1200px-SABIC_Logo_RGB.webp" alt="">
+                <img src="Media/imagenes/ABB-logo.webp" alt="">
+                <img src="Media/imagenes/Aggreko-Logo-RGB-01.webp" alt="">
+                <img src="Media/imagenes/antofagasta-minerals-logo.webp" alt="">
+                <img src="Media/imagenes/DHL_Logo.svg.webp" alt="">
+                <img src="Media/imagenes/Hackett_Sport_Logo_Black.webp" alt="">
+                <img src="Media/imagenes/HK_2019_Logo-1-.webp" alt="">
+                <img src="Media/imagenes/Ifosys-Logo.webp" alt="">
+                <img src="Media/imagenes/Julius-baer-logo.webp" alt="">
+                <img src="Media/imagenes/pif_colour.webp" alt="">
+                <img src="Media/imagenes/1200px-SABIC_Logo_RGB.webp" alt="">
+                <img src="Media/imagenes/ABB-logo.webp" alt="">
+                <img src="Media/imagenes/Aggreko-Logo-RGB-01.webp" alt="">
+                <img src="Media/imagenes/antofagasta-minerals-logo.webp" alt="">
+                <img src="Media/imagenes/DHL_Logo.svg.webp" alt="">
+                <img src="Media/imagenes/Hackett_Sport_Logo_Black.webp" alt="">
+                <img src="Media/imagenes/HK_2019_Logo-1-.webp" alt="">
+                <img src="Media/imagenes/Ifosys-Logo.webp" alt="">
+                <img src="Media/imagenes/Julius-baer-logo.webp" alt="">
+                <img src="Media/imagenes/pif_colour.webp" alt="">
+                <img src="Media/imagenes/1200px-SABIC_Logo_RGB.webp" alt="">
+                <img src="Media/imagenes/ABB-logo.webp" alt="">
+                <img src="Media/imagenes/Aggreko-Logo-RGB-01.webp" alt="">
+                <img src="Media/imagenes/antofagasta-minerals-logo.webp" alt="">
+                <img src="Media/imagenes/DHL_Logo.svg.webp" alt="">
+                <img src="Media/imagenes/Hackett_Sport_Logo_Black.webp" alt="">
+                <img src="Media/imagenes/HK_2019_Logo-1-.webp" alt="">
+                <img src="Media/imagenes/Ifosys-Logo.webp" alt="">
+                <img src="Media/imagenes/Julius-baer-logo.webp" alt="">
+                <img src="Media/imagenes/pif_colour.webp" alt="">
+            </div>
+        </div>
+        <hr>
+        <!-- Sección Derechos de Autor -->
+        <div class="container py-2">
+            <p class="mb-0">
+                <a href="404.html" class="text-blue text-decoration-none mx-2">MEDIA ACCREDITATION</a>
+                <a href="404.html" class="text-blue text-decoration-none mx-2">MEDIA CENTRE</a>
+                <a href="404.html" class="text-blue text-decoration-none mx-2">CONTACT US</a>
+            </p>
+        </div>
+        <hr>
+        <!-- Sección Enlaces Legales -->
+        <div class="container py-2">
+            <p class="mb-0">
+                <a href="404.html" class="text-blue text-decoration-none mx-2">Términos y Condiciones</a>
+                <a href="404.html" class="text-blue text-decoration-none mx-2">Política de privacidad</a>
+                <a href="404.html" class="text-blue text-decoration-none mx-2">Declaración sobre la esclavitud moderna</a>
+            </p>
+        </div>
+        <hr>
+        <!-- Sección Media -->
+        <div class="container py-2">
+            <p class="mb-1">© FIA 2013-2024 All content subject to FIA approval</p>
+        </div>
+    </footer>
+  </div>
+
 
     <!-- LOCOMOTIVE -->
-    <script src="node_modules/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
-    <!-- SPLIDE -->
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src='node_modules\locomotive-scroll\dist\locomotive-scroll.min.js'></script>
+    <!-- MODELVIEWER -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- BOOSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!-- SPLIDE -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"></script>
     <!-- JS -->
     <script src="scripts/scripts.js"></script>
 </body>
