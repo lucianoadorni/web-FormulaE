@@ -77,31 +77,31 @@
             <ul class="splide__list">
               <li class="splide__slide">
                 <a href="#" class="card" > 
-                  <img src="images/Formula e-3.jpg" alt="Slide 1">
+                  <img src="Media\imagenes\Jaguar2.webp" alt="Slide 1">
                   <div class="card-footer">Wheel-to-wheel in Mexico City</div>
                 </a>
               </li>
               <li class="splide__slide">
                 <a href="#" class="card">
-                  <img src="images/Formula e-3.jpg" alt="Slide 2">
+                  <img src="Media\imagenes\Jaguar3.webp" alt="Slide 2">
                   <div class="card-footer">Mitch Evans' record back to front drive</div>
                 </a>
               </li>
               <li class="splide__slide">
                 <a href="#" class="card">
-                  <img src="images/Formula e-3.jpg" alt="Slide 3">
+                  <img src="Media\imagenes\Jaguar4.webp" alt="Slide 3">
                   <div class="card-footer">Da Costa makes it three wins in a row</div>
                 </a>
               </li>
               <li class="splide__slide">
                 <a href="#" class="card">
-                  <img src="images/Formula e-3.jpg" alt="Slide 4">
+                  <img src="Media\imagenes\Jaguar5.webp" alt="Slide 4">
                   <div class="card-footer">Mitch Evans recounts his brilliant last-to-first recovery</div>
                 </a>
               </li>
               <li class="splide__slide">
                 <a href="#" class="card">
-                  <img src="images/Formula e-3.jpg" alt="Slide 5">
+                  <img src="Media\imagenes\Jaguar6.webp" alt="Slide 5">
                   <div class="card-footer">Da Costa makes it three wins in a row</div>
                 </a>
               </li>
@@ -111,12 +111,12 @@
 
         <div class="mainstory">
           <div class="mainstoryimg">
-            <img src="images/Formula e-3.jpg" alt="main story">
+            <img src="Media\imagenes\Jaguar.webp" alt="main story">
           </div>
           <div class="mainstorytext">
               <h1>Jaguar's Mitch Evans races from last to the win in staggering São Paulo E-Prix Round 1</h1>
               <p>The GEN3 Evo era and the 2024/25 ABB FIA Formula E World Championship fired into life in incredible fashion in Brazil with one of Formula E's all-time best races, as Jaguar TCS Racing's Mitch Evans drives from the pack of the pack to the front come the chequered flag.</p>
-              <button id="buttonWithArrow">View more <img class="arrowUpRight" src="Media\arrow-up-right-svgrepo-com.svg"></button>
+              <a class="btn btn-primary" href="Jaguar-noticia.html"> View more <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6m0 0H9m9 0v9"/></svg></a>
           </div>
         </div>
     </section>
@@ -126,7 +126,7 @@
 
         <div class="historyOne">
           <div>
-            <img src="images/Formula e-3.jpg" alt="">
+            <video src="Media\videos\formulaEvideo.mp4" autoplay muted loop></video>
           </div>
           <div>
             <h2>Formula E races are a high-speed game of chess</h2>
@@ -145,7 +145,7 @@
               Featuring a collective of world- class automotive manufacturers, renowned brands and highly skilled drivers, Season 9 expanded on previous achievements to run 16 races across urban circuits in 10 different cities around the world. Through innovative local initiatives, we continued to pursue better ways to address some of today's most critical societal challenges, reinforcing our commitment to expedite sustainable human development in the pursuit of a brighter future. With climate and nature stewardship being at the heart of our DNA, we worked to ensure Season 9 continued to push the boundaries of what is possible and laid the foundation for further progress in Season 10.
             </p>
           </div>
-          <model-viewer src="3d\formula_e__jaguar_i_type-4.glb" ar environment-image="legacy" camera-controls touch-action="pan-y" camera-orbit="calc(-1.5rad + env(window-scroll-y) * 4rad) calc(0deg + env(window-scroll-y) * 180deg) calc(5m - env(window-scroll-y) * 10m)" ></model-viewer>
+          <model-viewer src="3d\formula_e__jaguar_i_type-4.glb" ar environment-image="legacy" camera-controls touch-action="pan-y"></model-viewer>
         </div>
     </section>
 
@@ -172,7 +172,7 @@
                 <!-- Data will be populated here -->
               </tbody>
             </table>
-            <button id="buttonWithArrow">View more <img class="arrowUpRight" src="Media\arrow-up-right-svgrepo-com.svg"></button>
+            <a class="btn btn-primary" href="Jaguar-noticia.html"> View more <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6m0 0H9m9 0v9"/></svg></a>
           </div>
         </div>
     </section>
@@ -198,7 +198,7 @@
                 <p class="event-date" id="event-date">Select a date</p>
                 <p class="event-title" id="event-title">Event Title</p>
                 <p class="event-description" id="event-description">Event details will appear here when you select a date from the calendar.</p>
-                <button id="buttonWithArrow">Tickets <img class="arrowUpRight" src="Media\arrow-up-right-svgrepo-com.svg"></button>
+                <a class="btn btn-primary" href="Jaguar-noticia.html"> View more <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6m0 0H9m9 0v9"/></svg></a>
               </div>
             </div>
           </div>
@@ -207,48 +207,57 @@
 
     <section data-scroll-section id="sustain">
       <h1 id="mainTittles">Sustainability at Formula E</h1>
-      <div id="horizontalScrollSec" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-8">
+      
+      <div id="cardSection" data-scroll>
+        <div class="Boostrapcard" style="width: 18rem;">
+          <img src="Media\imagenes\politica_sostenibilidad.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+
+        <div class="Boostrapcard" style="width: 18rem;">
+          <img src="Media\imagenes\politica_sostenibilidad2.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+
         <div class="Boostrapcard" style="width: 18rem;">
           <img src="images/Formula e-3.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <button id="buttonWithArrow">Tickets <img class="arrowUpRight" src="Media\arrow-up-right-svgrepo-com.svg"></button>
           </div>
         </div>
+
         <div class="Boostrapcard" style="width: 18rem;">
           <img src="images/Formula e-3.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <button id="buttonWithArrow">Tickets <img class="arrowUpRight" src="Media\arrow-up-right-svgrepo-com.svg"></button>
           </div>
         </div>
+
         <div class="Boostrapcard" style="width: 18rem;">
           <img src="images/Formula e-3.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <button id="buttonWithArrow">Tickets <img class="arrowUpRight" src="Media\arrow-up-right-svgrepo-com.svg"></button>
           </div>
         </div>
+
         <div class="Boostrapcard" style="width: 18rem;">
           <img src="images/Formula e-3.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <button id="buttonWithArrow">Tickets <img class="arrowUpRight" src="Media\arrow-up-right-svgrepo-com.svg"></button>
           </div>
         </div>
-        <div class="Boostrapcard" style="width: 20rem;">
-          <img src="images/Formula e-3.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <button id="buttonWithArrow">Tickets <img class="arrowUpRight" src="Media\arrow-up-right-svgrepo-com.svg"></button>
-          </div>
-        </div>
-      </div>
+      </div> 
+      <a class="btn btn-primary" href="Jaguar-noticia.html"> View more <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6m0 0H9m9 0v9"/></svg></a>
     </section>
 
     <section data-scroll-section id="valuesand">
@@ -259,46 +268,46 @@
         <!-- Sección Marquee -->
         <div class="marquee py-3">
             <div>
-                <img src="Media/imagenes/1200px-SABIC_Logo_RGB.webp" alt="">
-                <img src="Media/imagenes/ABB-logo.webp" alt="">
-                <img src="Media/imagenes/Aggreko-Logo-RGB-01.webp" alt="">
-                <img src="Media/imagenes/antofagasta-minerals-logo.webp" alt="">
-                <img src="Media/imagenes/DHL_Logo.svg.webp" alt="">
-                <img src="Media/imagenes/Hackett_Sport_Logo_Black.webp" alt="">
-                <img src="Media/imagenes/HK_2019_Logo-1-.webp" alt="">
-                <img src="Media/imagenes/Ifosys-Logo.webp" alt="">
-                <img src="Media/imagenes/Julius-baer-logo.webp" alt="">
-                <img src="Media/imagenes/pif_colour.webp" alt="">
-                <img src="Media/imagenes/1200px-SABIC_Logo_RGB.webp" alt="">
-                <img src="Media/imagenes/ABB-logo.webp" alt="">
-                <img src="Media/imagenes/Aggreko-Logo-RGB-01.webp" alt="">
-                <img src="Media/imagenes/antofagasta-minerals-logo.webp" alt="">
-                <img src="Media/imagenes/DHL_Logo.svg.webp" alt="">
-                <img src="Media/imagenes/Hackett_Sport_Logo_Black.webp" alt="">
-                <img src="Media/imagenes/HK_2019_Logo-1-.webp" alt="">
-                <img src="Media/imagenes/Ifosys-Logo.webp" alt="">
-                <img src="Media/imagenes/Julius-baer-logo.webp" alt="">
-                <img src="Media/imagenes/pif_colour.webp" alt="">
-                <img src="Media/imagenes/1200px-SABIC_Logo_RGB.webp" alt="">
-                <img src="Media/imagenes/ABB-logo.webp" alt="">
-                <img src="Media/imagenes/Aggreko-Logo-RGB-01.webp" alt="">
-                <img src="Media/imagenes/antofagasta-minerals-logo.webp" alt="">
-                <img src="Media/imagenes/DHL_Logo.svg.webp" alt="">
-                <img src="Media/imagenes/Hackett_Sport_Logo_Black.webp" alt="">
-                <img src="Media/imagenes/HK_2019_Logo-1-.webp" alt="">
-                <img src="Media/imagenes/Ifosys-Logo.webp" alt="">
-                <img src="Media/imagenes/Julius-baer-logo.webp" alt="">
-                <img src="Media/imagenes/pif_colour.webp" alt="">
-                <img src="Media/imagenes/1200px-SABIC_Logo_RGB.webp" alt="">
-                <img src="Media/imagenes/ABB-logo.webp" alt="">
-                <img src="Media/imagenes/Aggreko-Logo-RGB-01.webp" alt="">
-                <img src="Media/imagenes/antofagasta-minerals-logo.webp" alt="">
-                <img src="Media/imagenes/DHL_Logo.svg.webp" alt="">
-                <img src="Media/imagenes/Hackett_Sport_Logo_Black.webp" alt="">
-                <img src="Media/imagenes/HK_2019_Logo-1-.webp" alt="">
-                <img src="Media/imagenes/Ifosys-Logo.webp" alt="">
-                <img src="Media/imagenes/Julius-baer-logo.webp" alt="">
-                <img src="Media/imagenes/pif_colour.webp" alt="">
+                <img src="Media/Patrocinadores/1200px-SABIC_Logo_RGB.webp" alt="">
+                <img src="Media/Patrocinadores/ABB-logo.webp" alt="">
+                <img src="Media/Patrocinadores/Aggreko-Logo-RGB-01.webp" alt="">
+                <img src="Media/Patrocinadores/antofagasta-minerals-logo.webp" alt="">
+                <img src="Media/Patrocinadores/DHL_Logo.svg.webp" alt="">
+                <img src="Media/Patrocinadores/Hackett_Sport_Logo_Black.webp" alt="">
+                <img src="Media/Patrocinadores/HK_2019_Logo-1-.webp" alt="">
+                <img src="Media/Patrocinadores/Ifosys-Logo.webp" alt="">
+                <img src="Media/Patrocinadores/Julius-baer-logo.webp" alt="">
+                <img src="Media/Patrocinadores/pif_colour.webp" alt="">
+                <img src="Media/Patrocinadores/1200px-SABIC_Logo_RGB.webp" alt="">
+                <img src="Media/Patrocinadores/ABB-logo.webp" alt="">
+                <img src="Media/Patrocinadores/Aggreko-Logo-RGB-01.webp" alt="">
+                <img src="Media/Patrocinadores/antofagasta-minerals-logo.webp" alt="">
+                <img src="Media/Patrocinadores/DHL_Logo.svg.webp" alt="">
+                <img src="Media/Patrocinadores/Hackett_Sport_Logo_Black.webp" alt="">
+                <img src="Media/Patrocinadores/HK_2019_Logo-1-.webp" alt="">
+                <img src="Media/Patrocinadores/Ifosys-Logo.webp" alt="">
+                <img src="Media/Patrocinadores/Julius-baer-logo.webp" alt="">
+                <img src="Media/Patrocinadores/pif_colour.webp" alt="">
+                <img src="Media/Patrocinadores/1200px-SABIC_Logo_RGB.webp" alt="">
+                <img src="Media/Patrocinadores/ABB-logo.webp" alt="">
+                <img src="Media/Patrocinadores/Aggreko-Logo-RGB-01.webp" alt="">
+                <img src="Media/Patrocinadores/antofagasta-minerals-logo.webp" alt="">
+                <img src="Media/Patrocinadores/DHL_Logo.svg.webp" alt="">
+                <img src="Media/Patrocinadores/Hackett_Sport_Logo_Black.webp" alt="">
+                <img src="Media/Patrocinadores/HK_2019_Logo-1-.webp" alt="">
+                <img src="Media/Patrocinadores/Ifosys-Logo.webp" alt="">
+                <img src="Media/Patrocinadores/Julius-baer-logo.webp" alt="">
+                <img src="Media/Patrocinadores/pif_colour.webp" alt="">
+                <img src="Media/Patrocinadores/1200px-SABIC_Logo_RGB.webp" alt="">
+                <img src="Media/Patrocinadores/ABB-logo.webp" alt="">
+                <img src="Media/Patrocinadores/Aggreko-Logo-RGB-01.webp" alt="">
+                <img src="Media/Patrocinadores/antofagasta-minerals-logo.webp" alt="">
+                <img src="Media/Patrocinadores/DHL_Logo.svg.webp" alt="">
+                <img src="Media/Patrocinadores/Hackett_Sport_Logo_Black.webp" alt="">
+                <img src="Media/Patrocinadores/HK_2019_Logo-1-.webp" alt="">
+                <img src="Media/Patrocinadores/Ifosys-Logo.webp" alt="">
+                <img src="Media/Patrocinadores/Julius-baer-logo.webp" alt="">
+                <img src="Media/Patrocinadores/pif_colour.webp" alt="">
             </div>
         </div>
         <hr>

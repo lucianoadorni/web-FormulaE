@@ -19,6 +19,7 @@ body {
     box-sizing: border-box;
 }
 
+/* MAIN TITLES */
 #mainTittles {
     font-family: "QbOne";
     color: var(--main);
@@ -26,33 +27,27 @@ body {
     padding: 2em;
 }
 
-#buttonWithArrow {
+/* ALL BUTTONS */
+.btn-primary {
     background-color: var(--main);
     color: white;
-    border: none;
     padding: 0.5em 0.8em;
     border-radius: 30px;
     text-decoration: none;
-    display: flex;
-    align-items: center;
     border: 1px solid var(--main);
     transition: 0.2s;
 }
 
-#buttonWithArrow img {
-    width: 2em;
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(317deg) brightness(104%) contrast(101%);
-    overflow: hidden;
-}
-
-#buttonWithArrow:hover {
+.btn-primary:hover {
     background-color: var(--secondary);
     color: var(--main);
     transition: 0.2s;
+}
 
-    & > img {
-        filter: brightness(0) saturate(100%) invert(8%) sepia(100%) saturate(7196%) hue-rotate(247deg) brightness(98%) contrast(144%);
-    }
+.btn-primary:active {
+    background-color: var(--main) !important;
+    color: white !important;
+    transition: 0.2s;
 }
 
 /* NAV */
@@ -255,7 +250,7 @@ section#whatis #mainTittles {
     width: 50%;
 }
 
-.historyOne img {
+.historyOne video{
     width: 100%;
     border-radius: 0 30px 30px 0;
 }
@@ -403,12 +398,21 @@ td {
 }
 
 /* SUSTAINABILITY */
-#horizontalScrollSec {
-    display: flex;
-    width: 200vh;
+#cardSection {
 }
 
-#horizontalScrollSec .Boostrapcard {
+.Boostrapcard {
+    background-color: var(--main);
+    color: var(--secondary);
+    border-radius: 30px;
+    margin: 1em;
+}
+
+.Boostrapcard img {
+    border-radius: 30px;
+}
+
+.Boostrapcard h5, p {
     padding: 1em;
 }
 
