@@ -19,44 +19,76 @@
 </head>
 <body>
   <div data-scroll-container>
+    
+    <!-- LOADING SCREEN -->
+    <div id="loadingScreen">
+      <div class="f1-lights">
+        <div class="back-board"></div>
+        <div class="light-strip">
+          <div class="light"></div>
+          <div class="light"></div>
+          <div class="light"></div>
+          <div class="light"></div>
+        </div>
+        <div class="light-strip">
+          <div class="light"></div>
+          <div class="light"></div>
+          <div class="light"></div>
+          <div class="light"></div>
+        </div>
+        <div class="light-strip">
+          <div class="light"></div>
+          <div class="light"></div>
+          <div class="light"></div>
+          <div class="light"></div>
+        </div>
+        <div class="light-strip">
+          <div class="light"></div>
+          <div class="light"></div>
+          <div class="light"></div>
+          <div class="light"></div>
+        </div>
+        <div class="light-strip">
+          <div class="light"></div>
+          <div class="light"></div>
+          <div class="light"></div>
+          <div class="light"></div>
+        </div>
+      </div>
+    </div>
+
     <nav class="navbar bg-body-tertiary fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="Media\Formula_E_Wordmark_full_colour.png" alt="formula e logo"></a>
+        <a class="navbar-brand" href="#MainScreen"><img src="Media\Formula_E_Wordmark_full_colour.png" alt="formula e logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-text-menu">Menu</span>
-          <span class="navbar-toggler-icon-custom"><img src="Media\bars-solid.svg"></span>
+          <svg class="navbar-toggler-icon-custom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32m0 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32m448 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32"/></svg>
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <img id="offcanvasNavbarLabel" class="offcanvas-title" src="Media\Formula_E_Wordmark_full_colour.png" alt="formula e logo">
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a data-scroll-to class="nav-link active" aria-current="page" href="#news">Home</a>
+                <a data-scroll-to class="nav-link active" aria-current="page" href="#news">NEWS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a data-scroll-to class="nav-link active" aria-current="page" href="#whatis">WHAT IS FORMULA E?</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+              <li class="nav-item">
+                <a data-scroll-to class="nav-link active" aria-current="page" href="#racepreview">Race review</a>
               </li>
-            </ul>
-            <form class="d-flex mt-3" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+              <li class="nav-item">
+                <a data-scroll-to class="nav-link active" aria-current="page" href="#calendar">Calendar</a>
+              </li>
+              <li class="nav-item">
+                <a data-scroll-to class="nav-link active" aria-current="page" href="#sustain">Sustainability at Formula E</a>
+              </li>
+              <li class="nav-item">
+                <a data-scroll-to class="nav-link active" aria-current="page" href="#valuesand">Our Values and Objectives</a>
+              </li>
           </div>
         </div>
       </div>
@@ -70,7 +102,7 @@
     </section>
   
     <section data-scroll-section id="news">
-        <h1 data-scroll data-scroll-delay="0.2" id="mainTittles">NEWS</h1>
+        <h1 data-scroll id="mainTittles">NEWS</h1>
         
         <div id="splide" class="splide">
           <div class="splide__track">

@@ -50,6 +50,66 @@ body {
     transition: 0.2s;
 }
 
+/* LOADING SCREEN */
+#loadingScreen {
+    position: absolute;
+    z-index: 1100;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.light {
+    border-radius: 100%;
+    background: #222;
+    margin: 10px;
+}
+  
+.light::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+  
+.light-strip.on .light:nth-child(1n+3) {
+    background: red;
+}
+  
+.f1-lights {
+    display: flex;
+    position: relative;
+    width: 100%;
+    max-width: 520px;
+}
+  
+.light-strip {
+    background: black;
+    border-radius: 11px;
+    margin: 0 2px;
+    position: relative;
+    flex: 1;
+}
+  
+@media (min-width: 435px) {
+    .light-strip {
+      margin: 0 5px;
+      border-radius: 14px;
+    }
+}
+  
+.back-board {
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    top: 50%;
+    height: 5%;
+    background: #000;
+    transform: translateY(-50%);
+}
+
 /* NAV */
 
 nav {
@@ -77,13 +137,10 @@ nav {
     box-shadow: none !important;
 }
 
-span.navbar-toggler-icon-custom {
+.navbar-toggler-icon-custom {
     padding: 0 0 0 0.5em;
-}
-
-span.navbar-toggler-icon-custom img {
     filter: invert(8%) sepia(100%) saturate(7196%) hue-rotate(247deg) brightness(98%) contrast(144%);
-    width: 1em;
+    width: 1.5em;
 }
 
 .navbar-brand img {
@@ -103,9 +160,25 @@ span.navbar-toggler-text-menu {
         color: var(--secondary);
     }
 
-    & span.navbar-toggler-icon-custom img {
+    & .navbar-toggler-icon-custom {
         filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(317deg) brightness(104%) contrast(101%);
     }
+}
+
+.offcanvas-title {
+    width: 10em;
+}
+
+.offcanvas .nav-link {
+    font-family: "QbOne";
+    font-size: 1.5em;
+    color: var(--main);
+    transition: 0.2s;
+}
+
+.offcanvas .nav-link:hover {
+    color: var(--main) !important;
+    transition: 0.2s;
 }
 
 /* MAIN SCRREN */
@@ -124,8 +197,8 @@ span.navbar-toggler-text-menu {
 }
 
 #MainScreen img {
-    height: 97vh;
     width: 100vw;
+    height: 97vh;
     object-fit: cover;
 }
 
@@ -412,7 +485,7 @@ td {
     border-radius: 30px;
 }
 
-.Boostrapcard h5, p {
+.Boostrapcard h5, .Boostrapcard p {
     padding: 1em;
 }
 
@@ -494,4 +567,67 @@ hr {
     border: 0; 
     height: 0.2rem; 
     background-color: #003BE6;
+}
+/* XS devices (landscape phones, 576px and up) */
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 710px) {
+    #MainText {
+        font-size: 4em;
+        top: 31%;
+        left: 10%;
+    }
+
+    #COUNTDOWN {
+        font-size: 1em;
+    }
+
+    .mainstory {
+        padding: 3em 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainstory .mainstoryimg {
+        width: 100%;
+    }
+
+    .mainstory .mainstorytext {
+        width: 100%;
+        padding: 1em 1em 1em 2em;
+    }
+
+    .mainstory .mainstorytext h1 {
+        font-weight: bold;
+        font-size: 1.2em
+    }
+
+    .historyOne {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0em 0em;
+    }
+    
+    .historyOne > div {
+        width: 100%;
+    }
+
+    model-viewer {
+        width: 100%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 1400px) {
+    #MainText {
+        font-size: 6em;
+        top: 32%;
+        left: 45%;
+    }
+
+    #COUNTDOWN {
+        font-size: 1.2em;
+    }
 }

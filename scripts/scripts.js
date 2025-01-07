@@ -53,6 +53,25 @@ $(document).ready(function () {
       }
   }, 1000);
 
+  // LOADING SCREEN
+  $('.light-strip').each(function(i) {
+    (function(self, j) {
+        setTimeout(function() {
+            $(self).addClass('on');
+        },(j*1000)+1000);
+    })(this, i);
+  });
+
+  if (sessionStorage.getItem('loadingScreenShown') !== 'true') {
+    $("#loadingScreen").delay(5000).slideUp(1000, function() {
+        // Set the flag in session storage once the loading screen is hidden
+        sessionStorage.setItem('loadingScreenShown', 'true');
+    });
+  } else {
+    // Immediately hide the loading screen if it has been shown in this session
+    $("#loadingScreen").hide();
+  }
+
   // TABLE 
   const data = {
   mexico: [
