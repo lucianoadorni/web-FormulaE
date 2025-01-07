@@ -181,6 +181,12 @@ span.navbar-toggler-text-menu {
     transition: 0.2s;
 }
 
+.offcanvas .btn {
+    font-family: "QbOne";
+    font-size: 1.2em;
+    margin: 0 0 1.5em 0;
+}
+
 /* MAIN SCRREN */
 #MainText {
     font-family: "QbOne";
@@ -273,6 +279,7 @@ span.navbar-toggler-text-menu {
 .mainstory {
     padding: 10em 0;
     display: flex;
+    align-items: center;
 }
 
 .mainstory img {
@@ -430,7 +437,7 @@ td {
     background: white;
     color: black;
     border-radius: 8px;
-    margin-left: 20px;
+    margin-left: 1em;
     padding: 20px;
     width: 50%;
 }
@@ -616,6 +623,13 @@ hr {
 
     model-viewer {
         width: 100%;
+    }
+
+    .event-details {
+        margin-left: 0em;
+        margin-top: 1em;
+        padding: 20px;
+        width: 80%;
     }
 }
 
