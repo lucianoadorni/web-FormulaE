@@ -75,19 +75,19 @@ $(document).ready(function () {
   // TABLE 
   const data = {
   mexico: [
-    { position: 1, driver: "Driver A", team: "Team X", time: "45:14:758" },
-    { position: 2, driver: "Driver B", team: "Team Y", time: "+00:384" },
-    { position: 3, driver: "Driver C", team: "Team Z", time: "+00:844" },
+    { position: 1, driver: "Pascal Wehrlein", team: "TAG HEUER", time: "50:15:506" },
+    { position: 2, driver: "Sébastien Buemi", team: "ENVISION RACING", time: "50:16:668" },
+    { position: 3, driver: "Nick Cassidy", team: "JAGUAR TCS RACING", time: "50:17:585" },
   ],
   jeddah: [
-    { position: 1, driver: "Driver D", team: "Team A", time: "46:12:678" },
-    { position: 2, driver: "Driver E", team: "Team B", time: "+00:290" },
-    { position: 3, driver: "Driver F", team: "Team C", time: "+00:740" },
+    { position: 1, driver: "Jake Dennis", team: "ANDRETTI FORMULA E", time: "45:56:452" },
+    { position: 2, driver: "Jean-Éric Vergne", team: "DS PENSKE", time: "46:09:741" },
+    { position: 3, driver: "Nick Cassidy", team: "JAGUAR TCS RACING", time: "46:09:741" },
   ],
   monaco: [
-    { position: 1, driver: "Driver G", team: "Team M", time: "43:22:958" },
-    { position: 2, driver: "Driver H", team: "Team N", time: "+00:540" },
-    { position: 3, driver: "Driver I", team: "Team O", time: "+01:084" },
+    { position: 1, driver: "Mitch Evans", team: "JAGUAR TCS RACING", time: "58:15:455" },
+    { position: 2, driver: "Nick Cassidy", team: "JAGUAR TCS RACING", time: "58:16:401" },
+    { position: 3, driver: "Stoffel Vandoorne", team: "MASERATI MSG RACING", time: "58:19:290" },
   ],
   };
   function populateTable(filter) {
@@ -120,41 +120,41 @@ $(document).ready(function () {
     12: {
       title: "Miami Grand Prix",
       description: "Experience the thrill of the Miami Grand Prix! Round 5 of the championship.",
-      image: "https://via.placeholder.com/300x200/FF0000/FFFFFF?text=Miami+GP",
+      image: "../Media/imagenes/Jaguar4.webp",
       link: "#"
     },
     15: {
       title: "Driver Meet & Greet",
       description: "Meet your favorite drivers and get autographs!",
-      image: "https://via.placeholder.com/300x200/00FF00/FFFFFF?text=Meet+Drivers",
+      image: "../Media/imagenes/politica_sostenibilidad.webp",
       link: "#"
     },
     22: {
       title: "Pit Lane Walk",
       description: "Explore the pit lane and get an inside look at the teams in action.",
-      image: "https://via.placeholder.com/300x200/0000FF/FFFFFF?text=Pit+Lane+Walk",
+      image: "../Media/imagenes/Jaguar3.webp",
       link: "#"
     }
   };
   const $calendarDays = $(".calendar-days");
     
-  for (let day = 1; day <= 30; day++) {
+  for (let day = 1; day <= 31; day++) {
     const $dayElement = $("<div>")
       .addClass("calendar-day")
       .text(day);
     $dayElement.on("click", function () {
       const event = events[day];
       if (event) {
-        $("#event-date").text(`April ${day}`);
+        $("#event-date").text(`January ${day}`);
         $("#event-title").text(event.title);
         $("#event-description").text(event.description);
         $("#event-image").attr("src", event.image);
         $("#event-link").attr("href", event.link);
       } else {
-        $("#event-date").text(`April ${day}`);
+        $("#event-date").text(`January ${day}`);
         $("#event-title").text("No Events");
         $("#event-description").text("No events scheduled for this day.");
-        $("#event-image").attr("src", "https://via.placeholder.com/300x200/CCCCCC/000000?text=No+Events");
+        $("#event-image").attr("src", "../Media/imagenes/Formula e-3.jpg");
         $("#event-link").attr("href", "#");
       }
     });

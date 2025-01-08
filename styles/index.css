@@ -20,7 +20,7 @@ body {
 }
 
 /* MAIN TITLES */
-#mainTittles {
+.mainTittles {
     font-family: "QbOne";
     color: var(--main);
     text-align: center;
@@ -194,8 +194,8 @@ span.navbar-toggler-text-menu {
     font-size: 8em;
     z-index: 3;
     position: absolute;
-    top: 31%;
-    left: 40%;
+    top: 25%;
+    left: 45%;
 }
 
 #MainScreen {
@@ -315,7 +315,7 @@ section#whatis {
     padding-bottom: 5em;
 }
 
-section#whatis #mainTittles {
+section#whatis .mainTittles {
     color: var(--secondary);
 }
 
@@ -389,7 +389,7 @@ td {
     padding-bottom: 4em;
 }
 
-#calendar #mainTittles {
+#calendar .mainTittles {
     color: var(--secondary);
 }
 
@@ -420,11 +420,20 @@ td {
     gap: 10px;
 }
 
+.calendar-days:nth-child(12) {
+    background-color: var(--main);
+}
+
 .calendar-day {
     text-align: center;
     padding: 10px;
     border-radius: 8px;
     cursor: pointer;
+    transition: background 0.3s;
+}
+
+.calendar-day.event {
+    background-color: var(--main);
     transition: background 0.3s;
 }
 
@@ -478,8 +487,11 @@ td {
 }
 
 /* SUSTAINABILITY */
-#cardSection {
+#sustain .row >*{
+    padding: 0 0 0 0 !important;
 }
+
+
 
 .Boostrapcard {
     background-color: var(--main);
@@ -496,6 +508,15 @@ td {
     padding: 1em;
 }
 
+/* VALUES AND OBJETIVES */
+#valuesand .mainTittles {
+    padding: 1em;
+}
+
+#valuesand .mainstory {
+    padding: 1em 0 1em 0;
+}
+
 /* FOOTER */
 .marquee {
     position: relative;
@@ -504,6 +525,7 @@ td {
     background: white;
     padding: 20px 0;
     overflow: hidden;
+    line-break: strict;
 }
 
 .marquee-content {
@@ -521,7 +543,8 @@ td {
     position: absolute;
     width: 300%;
     overflow: hidden;
-    animation: marquee 100s linear infinite;
+    animation: marquee 20s linear infinite;
+    line-break: strict;
 }
 
 .marquee div:hover {
@@ -538,49 +561,11 @@ td {
 100% { left: -100%; }
 }
 
-.footer {
-    background-color: white;
-}
-
-.footer-links {
-    background: #001628;
-    padding: 15px 0;
-}
-
-.footer-links a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 14px;
-}
-
-.footer-bottom {
-    background: #f8f9fa;
-    padding: 1rem 0;
-    font-size: 1.2rem;
-}
-
-.footer-bottom a {
-    color: #333;
-    text-decoration: none;
-    margin-left: 1.5rem;
-}
-
-.container p a {
-    color: #003BE6;
-}
-
-hr {
-    border: 0; 
-    height: 0.2rem; 
-    background-color: #003BE6;
-}
-/* XS devices (landscape phones, 576px and up) */
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width: 710px) {
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
     #MainText {
         font-size: 4em;
-        top: 31%;
+        top: 35%;
         left: 10%;
     }
 
@@ -611,7 +596,7 @@ hr {
 
     .historyOne {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         justify-content: space-between;
         padding: 0em 0em;
@@ -631,17 +616,8 @@ hr {
         padding: 20px;
         width: 80%;
     }
-}
 
-/* Medium devices (tablets, 768px and up) */
-@media (max-width: 1400px) {
-    #MainText {
-        font-size: 6em;
-        top: 32%;
-        left: 45%;
-    }
-
-    #COUNTDOWN {
-        font-size: 1.2em;
+    .table-responsive {
+        padding: 0em 0em;
     }
 }
