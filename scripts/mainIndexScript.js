@@ -120,19 +120,19 @@ $(document).ready(function () {
     12: {
       title: "Miami Grand Prix",
       description: "Experience the thrill of the Miami Grand Prix! Round 5 of the championship.",
-      image: "../Media/imagenes/Jaguar4.webp",
+      image: "Media/imagenes/Jaguar4.webp",
       link: "#"
     },
     15: {
       title: "Driver Meet & Greet",
       description: "Meet your favorite drivers and get autographs!",
-      image: "../Media/imagenes/politica_sostenibilidad.webp",
+      image: "Media/imagenes/politica_sostenibilidad.webp",
       link: "#"
     },
     22: {
       title: "Pit Lane Walk",
       description: "Explore the pit lane and get an inside look at the teams in action.",
-      image: "../Media/imagenes/Jaguar3.webp",
+      image: "Media/imagenes/Jaguar3.webp",
       link: "#"
     }
   };
@@ -154,7 +154,7 @@ $(document).ready(function () {
         $("#event-date").text(`January ${day}`);
         $("#event-title").text("No Events");
         $("#event-description").text("No events scheduled for this day.");
-        $("#event-image").attr("src", "../Media/imagenes/Formula e-3.jpg");
+        $("#event-image").attr("src", "Media/imagenes/Formula.e-3.jpg");
         $("#event-link").attr("href", "#");
       }
     });
